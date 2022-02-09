@@ -1,0 +1,18 @@
+<template>
+    <ul class="navigationBar">
+        <li><img class="animated-gif" src="https://c.tenor.com/Ijq1p3LXS74AAAAi/spin-donut.gif"></li>
+        <li class="Logo">NFD</li>
+    </ul>
+    <my-introductionpage></my-introductionpage>
+    <my-aboutus></my-aboutus>
+    <div class="hallofFame">
+        <h1 class="hallofFameHeading"></h1>
+        <div class="hallofFameCard">
+            <button type="button" label="Submit" onclick={handleChange} class="buttonClass">Wanna Find Out?</button>
+            <template if:false={buttonChecker}></template>
+            <template if:true={buttonChecker} style="text-align:center;">
+                <my-nameholder></my-nameholder>
+            </template>
+        </div>
+    </div>
+</template>

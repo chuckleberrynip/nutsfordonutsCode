@@ -1,0 +1,113 @@
+.navigationBar {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 2%;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to right,rgba(216, 121, 176, 0.801), rgba(187, 143, 81, 0.74));
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    min-width:97vw;
+}
+li.navbar {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none
+
+}
+li.navbar:hover {
+    background-color: rgba(170, 162, 162, 0.507);
+}
+li.Logo {
+    float:right;
+    display: block;
+    color: black;
+    text-align: center;
+    font-size:19px;
+    font-weight: bolder;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li.Logo:hover {
+    background-color: rgba(255, 0, 0, 0.192);
+    border-radius: 12px;
+}
+button.secondButton {
+    background-color: transparent;
+    font-size: 18px;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    text-align:justify;
+}
+img.animated-gif{
+    width: 80px;
+    height: auto;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none
+}
+.hallofFame { 
+    border-radius: 5px;
+    background-color: rgba(223, 219, 219, 0.89);
+    width: 96vw;
+    margin-left: 1vw;
+    margin-top: 0.5vw;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    min-height: 20vw;
+}
+.hallofFameCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(235, 222, 222, 0.507);
+    border-radius: 5px;
+    justify-content: center;
+    width: 92vw;
+    min-height: 30vh;
+    margin-left: 2vw;
+}
+.hallofFameHeading { 
+    text-align: center;
+    text-decoration: underline;
+    border-bottom:1px solid #CCC;
+}
+.hallofFameHeading:before { 
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    border-bottom: 1px solid #AAA;
+    content: "Hall of Fame"
+}
+.hallofFameCard:hover {
+    opacity: 0.7;
+}
+.buttonClass {
+    margin-left: 42vw;
+    margin-top: 1vw;
+}
+
+@media (max-width: 345px) {
+    li.navbar {
+        font-size: 13px;
+    }
+    li.Logo{
+        font-size: 14px;
+    }
+    img.animated-gif {
+        padding-top: 1%;
+        width: 20vw;
+    }
+    .buttonClass {
+        margin-left: 26vw;
+        margin-top: 5vw;
+    }
+  }

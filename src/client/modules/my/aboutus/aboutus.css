@@ -1,0 +1,67 @@
+h1.aboutUsHeading {
+    text-align:center;
+    text-decoration: underline;
+    border-bottom: 1px solid #CCC;
+}
+h1.aboutUsHeading:before {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    border-bottom: 1px solid #AAA;
+    content: "About Us" 
+}
+div.aboutUs {
+    border-radius: 5px;
+    background-color: rgba(223, 219, 219, 0.89);
+    width: 96vw;
+    margin-left: 1vw;
+    margin-top: 0.5vw;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    min-height: 30vw;
+}
+div.aboutUs:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+div.aboutflexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.aboutUsCard, .chefPictures {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(235, 222, 222, 0.507);
+    border-radius: 5px;
+    justify-content: center;
+    flex: 15%;
+    width: 10%;
+    margin: 5px;
+    min-height: 30vh;
+}
+.aboutUsCard:hover {
+    opacity: 0.6;
+}
+.chefPictures:hover {
+    opacity: 0.6;
+}
+img {
+    height: 25vw;
+    width: auto;
+    padding-left: 5vw;
+    padding-left: 5vw;
+}
+@media (max-width: 425px) {
+  
+    div.aboutflexcontainer {
+      display: flex;
+      flex-direction: column;
+    }
+    .aboutUsCard, .chefPictures {
+      width: 92vw;
+    }
+    img { 
+        width: 80vw;
+        height: auto;
+        padding-left: 8vw;
+    }
+}
